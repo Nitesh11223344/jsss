@@ -1,0 +1,33 @@
+JAWAI SAFARI AND STAY — META ADS / MULTI-PAGE HANDOFF
+
+MULTI-PAGE ROUTES
+- Home: index.html
+- Safari information: safaris.html
+- Stay information: stays.html
+- Safari lead form: safari-booking.html
+- Resort lead form: resort-booking.html
+- General enquiry form: enquiry.html
+- Separate post-submit URLs:
+  - thank-you-safari.html
+  - thank-you-resort.html
+  - thank-you-enquiry.html
+
+META PIXEL SETUP (REQUIRED BEFORE ADS)
+1. Create/select the client's Meta Pixel in Events Manager.
+2. Replace YOUR_META_PIXEL_ID in the META PIXEL snippet in every HTML page with the real numeric Pixel ID.
+3. Verify PageView fires on every page using Meta Pixel Helper / Events Manager Test Events.
+4. Submit each form with test details and verify the Lead event fires once.
+5. Verify each form redirects to its matching unique thank-you URL.
+6. In Ads Manager, optimize lead campaigns for the Lead event, not PageView.
+7. If available, configure Conversions API via the client's website platform/server for stronger measurement.
+
+IMPORTANT BEHAVIOUR
+- The booking forms are enquiry/request forms, not a live payment or inventory booking engine.
+- On submit, the form opens WhatsApp with the entered details and then navigates to the matching thank-you page.
+- The visitor must press Send in WhatsApp. A WhatsApp message is not sent automatically.
+- A thank-you page visit is not proof of a confirmed booking or payment.
+- Do not advertise a Purchase event unless a real payment/checkout system is implemented and verified.
+- The phone number and domain are retained from the supplied website.
+
+DEPLOYMENT
+Upload the contents of this ZIP to the website hosting root, preserving the assets/ folder and all HTML files.

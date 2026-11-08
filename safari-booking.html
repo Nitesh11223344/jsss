@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jawai Safari Booking | Jawai Safari And Stay</title><meta name="description" content="Request your Jawai leopard safari booking. Choose your date, experience and guest count.">
+<link rel="icon" href="favicon.png"><meta name="theme-color" content="#080a0b">
+<style>
+:root{--bg:#080a0b;--panel:#111516;--gold:#e9b63b;--muted:#aeb5b5;--line:#293033;--white:#f6f5ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{border-bottom:1px solid var(--line);background:#090c0df2;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:.08em;font-size:18px}.brand span{color:var(--gold)}.links{display:flex;gap:22px;align-items:center;color:#d8dddd;font-size:14px}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 20px;border-radius:7px;background:var(--gold);color:#17130a;font-weight:800;border:0;cursor:pointer;font-size:14px}.btn.outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+main{padding:56px 0 76px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.2em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:12px 0 18px;letter-spacing:-.04em}.hero p{color:var(--muted);font-size:17px;max-width:570px}.visual{min-height:370px;border-radius:16px;background:linear-gradient(180deg,#0002,#0009),url('assets/img-001-710b2554121b5ae6.webp') center/cover; border:1px solid var(--line)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}.form-wrap{max-width:760px;margin:42px auto 0}.form-wrap h2{margin:0 0 8px;font-size:27px}.hint{color:var(--muted);margin:0 0 22px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:13px;color:#e7e9e5;font-weight:700}input,select,textarea{width:100%;padding:13px 14px;background:#090d0e;border:1px solid #354044;border-radius:7px;color:white;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:115px;resize:vertical}.submit{width:100%;margin-top:20px}.fine{font-size:12px;color:var(--muted);margin-top:13px}.trust{display:flex;gap:18px;flex-wrap:wrap;color:#d5d9d8;font-size:13px;margin-top:24px}.trust span:before{content:'✓';color:var(--gold);margin-right:7px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.notice{padding:16px;border:1px solid #6c592a;background:#211b0d;border-radius:9px;color:#f1dfad;margin:20px 0}
+@media(max-width:760px){.nav{padding:14px 0;align-items:flex-start}.links{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:12px}.hero{grid-template-columns:1fr}.visual{min-height:230px;order:-1}.grid{grid-template-columns:1fr}main{padding:34px 0 55px}.panel{padding:21px}.hero p{font-size:15px}}
+</style><!-- META PIXEL: Replace YOUR_META_PIXEL_ID with the client's real Meta Pixel ID before launch. -->
+<script>
+(function(){
+  var PIXEL_ID='YOUR_META_PIXEL_ID';
+  if(!PIXEL_ID || PIXEL_ID==='YOUR_META_PIXEL_ID') return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',PIXEL_ID);
+  fbq('track','PageView');
+})();
+</script>
+</head><body>
+<header><div class="wrap nav"><a class="brand" href="index.html">JAWAI <span>SAFARI &amp; STAY</span></a><nav class="links"><a href="index.html">Home</a><a href="safaris.html">Safaris</a><a href="stays.html">Stays</a><a href="enquiry.html" class="btn outline">Enquiry</a></nav></div></header>
+<main class="wrap"><section class="hero"><div><div class="eyebrow">Jawai Safari And Stay · Rajasthan</div><h1>Plan your Jawai safari</h1><p>Book a guided Jawai safari experience. Tell us your preferred date and group size to check availability.</p><div class="trust"><span>Local trip assistance</span><span>Customisable experiences</span><span>Quick WhatsApp response</span></div></div><div class="visual" role="img" aria-label="Jawai landscape"></div></section>
+<section class="form-wrap panel"><h2>Send your booking request</h2><p class="hint">Share your details. We’ll open WhatsApp with your request ready to send.</p>
+<form onsubmit="sendRequest(this,'SafariBooking')"><div class="grid">
+<div class="field"><label for="name">Full name *</label><input id="name" name="Name" required autocomplete="name" placeholder="Your name"></div>
+<div class="field"><label for="phone">Mobile number *</label><input id="phone" name="Mobile" required type="tel" pattern="[0-9+() -]{8,16}" autocomplete="tel" placeholder="Your phone number"></div>
+<div class="field"><label for="date">Safari date *</label><input id="date" name="Safari date" type="date" required></div>
+<div class="field"><label for="guests">Number of guests *</label><input id="guests" name="Guests" type="number" min="1" max="100" required value="2"></div>
+<div class="field full"><label for="experience">Safari experience *</label><select id="experience" name="Safari experience" required><option value="">Choose an experience</option><option>Morning Leopard Safari</option><option>Evening Leopard Safari</option><option>Morning &amp; Evening Leopard Safari</option><option>Private Full-Day Jawai Safari</option><option>Birds &amp; Crocodile Safari</option><option>Village &amp; Culture Experience</option><option>Not sure, need guidance</option></select></div>
+<div class="field full"><label for="notes">Additional requirements</label><textarea id="notes" name="Additional requirements" placeholder="Pickup, preferred timing or any questions (optional)"></textarea></div>
+</div><button class="btn submit" type="submit">CONTINUE TO WHATSAPP</button><p class="fine">Your booking is not confirmed until availability and advance payment are confirmed by our team.</p></form>
+</section></main><footer><div class="wrap foot"><span>© <span id="year"></span> Jawai Safari And Stay</span><span>+91 77289 25865 · jawaisafariandstay@gmail.com</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();
+const PHONE='917728925865';
+function sendRequest(form,eventName){event.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hello Jawai Safari And Stay, I would like to make a safari booking request.'];for(const [k,v] of d.entries()){if(String(v).trim())lines.push(k.replace(/([A-Z])/g,' $1')+': '+v);}const msg=lines.join('\n');try{if(typeof fbq==='function')fbq('track','Lead',{content_name:'safari booking landing page',content_category:'Jawai booking'});}catch(e){}window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg),'_blank','noopener');window.location.href='thank-you-safari.html';}
+</script></body></html>
